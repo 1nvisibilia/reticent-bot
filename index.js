@@ -34,7 +34,7 @@ client.on('messageCreate', (message) => {
 		disable = true;
 		message.channel.send("current functionality disabled");
 	} else if (message.content === ".nv info") {
-		message.channel.send(`this is a bot build by tao. 
+		message.channel.send(`this is a bot built by tao. 
 		it sends the random image apex is obsessed with whenever he types in the chat, 
 		with the cooldown of 5 minutes. use \`.nv enable\` and \`.nv disable\` to toggle this functionality`);
 	} else if (message.author.id === apexID && coolDown === false && disable === false) {
