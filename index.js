@@ -22,6 +22,9 @@ client.once('ready', () => {
 
 let coolDown = false;
 let disable = false;
+const dailyReset = setInterval(() => {
+	disable = false;
+}, 86400000);
 
 // Listen for messages
 client.on('messageCreate', (message) => {
